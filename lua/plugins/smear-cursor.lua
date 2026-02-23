@@ -6,6 +6,9 @@ return {
     -- hide_target_hack = true,
     cursor_color = "#ff4000",
     particles_enabled = true,
+
+    smear_insert_mode = false,
+
     stiffness = 0.5,
     trailing_stiffness = 0.2,
     trailing_exponent = 5,
@@ -23,15 +26,17 @@ return {
     particle_damping = 0.15,
     particle_gravity = -50,
     min_distance_emit_particles = 0,
+
+    logging_level = vim.log.levels.TRACE,
   },
-  -- specs = {
-  --   -- disable mini.animate cursor
-  --   {
-  --     "nvim-mini/mini.animate",
-  --     optional = true,
-  --     opts = {
-  --       cursor = { enable = false },
-  --     },
-  --   },
-  -- },
+  specs = {
+    -- disable mini.animate cursor
+    {
+      "nvim-mini/mini.animate",
+      optional = true,
+      opts = {
+        cursor = { enable = false },
+      },
+    },
+  },
 }
