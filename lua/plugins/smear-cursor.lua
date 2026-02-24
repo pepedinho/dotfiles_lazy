@@ -4,7 +4,7 @@ return {
   cond = vim.g.neovide == nil,
   opts = {
     -- hide_target_hack = true,
-    cursor_color = "#ff4000",
+    cursor_color = "#d946ef",
     particles_enabled = true,
 
     smear_insert_mode = false,
